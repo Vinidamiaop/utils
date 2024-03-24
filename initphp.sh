@@ -19,7 +19,7 @@ fi
 sudo apt update -y && sudo apt upgrade -y
 
 # verifica se o php ja esta instalado
-phpinstalado=$(php7.3 --version 2>/dev/null | grep PHP)
+phpinstalado=$($phpversion --version 2>/dev/null | grep PHP)
 if [ -z "$phpinstalado" ]; then
     #adiciona ppa e instala o php
     echo "Adding ppa:ondrj/php"
