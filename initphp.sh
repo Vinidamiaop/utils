@@ -35,6 +35,7 @@ sudo apt install $phpversion-intl -y
 sudo apt install $phpversion-gd -y
 sudo apt install $phpversion-mysql -y
 sudo apt install $phpversion-zip -y
+sudo apt install $phpversion-mbstring -y
 
 
 # verifica se o composer ja esta instalado
